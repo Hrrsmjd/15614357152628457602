@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+credentials/
+logs/
+data/cache/
+data/raw/
+*.part
+
+# Potentially large/restricted ECMWF downloads
+data/raw/**/*.grib
+data/raw/**/*.grib2
+data/raw/**/*.nc
+data/raw/**/*.netcdf
+data/raw/**/*.tmp
+
+# Parquet is the retained per-case format; the CSV export exceeds GitHub's
+# single-file limit and adds no information.
+data/processed/*case_metrics.csv
+
+data/
+models/
+figures/
+
+*.pdf

@@ -1,0 +1,41 @@
+{
+  "forecast_parts": 96,
+  "case_metric_rows": 552960,
+  "cohort_score_rows": 23040,
+  "comparison_rows": 11520,
+  "reference_manifest_rows": 16512,
+  "bootstrap_draws": 4000,
+  "model": {
+    "repository": "ecmwf/aifs-single-1.1",
+    "revision": "049b9ab1ccac3382b6332870ae550fd20a432faf",
+    "filename": "aifs-single-mse-1.1.ckpt",
+    "bytes": 993937386,
+    "sha256": "6acedcd2baee0e4a9ac6e8a9193b594247305801a26932aca5a3dee49ac3da8c",
+    "path": "/remote/rds/users/s1612415/windborne-assignment/models/aifs-single-1.1/aifs-single-mse-1.1.ckpt"
+  },
+  "reference_archive_metadata": {
+    "last_updated": "2026-07-30 03:04:12.745631+00:00",
+    "valid_time_start": "1940-01-01",
+    "valid_time_stop": "2026-04-30",
+    "valid_time_stop_era5t": "2026-07-24"
+  },
+  "excluded_accumulated_variable_mismatches": [
+    "cp",
+    "tp",
+    "ro",
+    "sf",
+    "ssrd",
+    "strd"
+  ],
+  "storage_policy": "Per-case sufficient statistics for 96 instantaneous fields; full forecast/reference/error arrays retained for q_50 and q_100.",
+  "comparisons": {
+    "same_season": {
+      "cohort_score_rows": 11520,
+      "comparison_rows": 5760
+    },
+    "cutover": {
+      "cohort_score_rows": 11520,
+      "comparison_rows": 5760
+    }
+  }
+}

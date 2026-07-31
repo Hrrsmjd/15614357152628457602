@@ -1,0 +1,17 @@
+[project]
+name = "windborne-assignment"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "earthkit-data>=0.20.0",
+    "earthkit-regrid>=0.5.1",
+    "eccodes>=2.47.0",
+    "eccodeslib>=2.48.0.26",
+    "ecmwf-api-client>=1.7.0",
+    "matplotlib>=3.11.1",
+    "numpy>=2.4.6",
+    "pandas>=3.0.5",
+    "pyarrow>=25.0.0",
+    "pyyaml>=6.0.3",
+    "remotezip>=0.12.3",
+]

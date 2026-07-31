@@ -1,0 +1,36 @@
+{
+  "title": "Inferred AIFS v1.1 50r1 versus 49r1 scorecard",
+  "formulas": {
+    "rmsef": "100 \u00d7 (RMSE50 / RMSE49 \u2212 1)",
+    "ccaf": "ACC50 \u2212 ACC49",
+    "sdaf": "100 \u00d7 (SDAF50 / SDAF49 \u2212 1)",
+    "seeps": "100 \u00d7 (SEEPS50 / SEEPS49 \u2212 1)"
+  },
+  "rows": 7820,
+  "metric_rows": {
+    "rmsef": 3190,
+    "ccaf": 2920,
+    "sdaf": 1620,
+    "seeps": 90
+  },
+  "rmse_rows": 3190,
+  "analysis_rows": 1620,
+  "observation_rows": 1570,
+  "severe_sample_mismatch_rows": 780,
+  "significance_reconstructed": false,
+  "outputs": {
+    "html": "outputs/inferred_v11_50r1_vs_49r1_scorecard.html",
+    "all_metrics_csv": "data/processed/inferred_v11_50r1_vs_49r1_all_metrics.csv",
+    "all_metrics_parquet": "data/processed/inferred_v11_50r1_vs_49r1_all_metrics.parquet",
+    "csv": "data/processed/inferred_v11_50r1_vs_49r1_rmse.csv",
+    "parquet": "data/processed/inferred_v11_50r1_vs_49r1_rmse.parquet",
+    "analysis_png": "outputs/figures/inferred_v11_50r1_vs_49r1_rmse_analysis.png",
+    "observation_png": "outputs/figures/inferred_v11_50r1_vs_49r1_rmse_observations.png"
+  },
+  "limitations": [
+    "aggregate ratio of means, not a mean of paired case differences",
+    "date-level membership and covariance are unavailable",
+    "analysis rows use different analysis-cycle truth",
+    "scorecard populations differ"
+  ]
+}
