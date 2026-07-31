@@ -11,7 +11,7 @@
     "filename": "aifs-single-mse-1.1.ckpt",
     "bytes": 993937386,
     "sha256": "6acedcd2baee0e4a9ac6e8a9193b594247305801a26932aca5a3dee49ac3da8c",
-    "path": "/remote/rds/users/s1612415/windborne-assignment/models/aifs-single-1.1/aifs-single-mse-1.1.ckpt"
+    "path": "models/aifs-single-1.1/aifs-single-mse-1.1.ckpt"
   },
   "reference_archive_metadata": {
     "last_updated": "2026-07-30 03:04:12.745631+00:00",

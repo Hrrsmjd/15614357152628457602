@@ -912,7 +912,7 @@ wheels = [
 ]
 
 [[package]]
-name = "windborne-assignment"
+name = "aifs-cycle-transition-analysis"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

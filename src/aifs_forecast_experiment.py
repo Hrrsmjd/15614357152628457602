@@ -1361,7 +1361,7 @@ def download_model(*, force: bool = False) -> dict[str, Any]:
         "filename": MODEL_FILENAME,
         "bytes": MODEL_PATH.stat().st_size,
         "sha256": sha256(MODEL_PATH),
-        "path": str(MODEL_PATH),
+        "path": str(MODEL_PATH.relative_to(ROOT)),
     }
     manifest = MODEL_DIR / "manifest.json"
     manifest.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")

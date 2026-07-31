@@ -69,7 +69,7 @@ def extract_subpages_data(path: Path) -> dict[str, Any]:
     marker = "SubPagesData = "
     start = text.find(marker)
     if start < 0:
-        raise ValueError(f"{path}: SubPagesData assignment not found")
+        raise ValueError(f"{path}: SubPagesData declaration not found")
     data, _ = json.JSONDecoder().raw_decode(text[start + len(marker) :])
     if "steps" not in data:
         raise ValueError(f"{path}: malformed SubPagesData object")
@@ -439,4 +439,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

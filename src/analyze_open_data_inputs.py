@@ -69,7 +69,7 @@ DEFAULT_MAP_FIELDS = {
 
 
 def configure_project_cache() -> None:
-    """Keep downloaded interpolation matrices inside the assignment folder."""
+    """Keep downloaded interpolation matrices inside the project directory."""
     EARTHKIT_CACHE.mkdir(parents=True, exist_ok=True)
     regrid_caching.SETTINGS["cache-policy"] = "user"
     regrid_caching.SETTINGS["user-cache-directory"] = str(EARTHKIT_CACHE)

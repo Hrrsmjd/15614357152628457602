@@ -50,7 +50,7 @@ analyses used by ECMWF internally.
 This is 90 dynamic messages per state and four static messages per cycle.
 Remote JSON-lines indexes determine exact byte ranges. Nearby selected ranges
 are coalesced to reduce request count; only selected GRIB messages are retained.
-All raw data and library interpolation assets are stored under this assignment
+All raw data and library interpolation assets are stored under the project
 directory; no experiment cache is written to the user's home cache.
 
 ## Preprocessing
